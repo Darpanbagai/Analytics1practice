@@ -1,240 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bangkok Travel Blog – Travel with Darpan</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fafafa;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: #0077cc;
-      color: white;
-      padding: 15px;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .container {
-      width: 90%;
-      max-width: 800px;
-      margin: 20px auto;
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .hero {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
-    h2 {
-      color: #0077cc;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-      background: #f2f2f2;
-    }
-    a {
-      color: #0077cc;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-
-<header>
-  Travel with Darpan – Bangkok Blog
-</header>
-
-<div class="container">
-  <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9" alt="Bangkok city view" class="hero" />
-
-  <h2>Bangkok – The City of Lights, Culture & Endless Energy</h2>
-
-  <p>Bangkok is one of those cities that hits you the moment you arrive — with its vibrant street life, colorful temples, thrilling nightlife, and delicious food around every corner. It’s chaotic, energetic, and absolutely unforgettable.</p>
-
-  <h3>My Experience in Bangkok</h3>
-  <p>I spent three days exploring the heart of Bangkok, visiting iconic temples, experiencing river cruises, trying exotic street food, and exploring buzzing markets. The warmth of the people and the cultural richness truly made this trip memorable.</p>
-
-  <h3>Must-Visit Places:</h3>
-  <ul>
-    <li>Grand Palace & Wat Phra Kaew</li>
-    <li>Wat Arun – Temple of Dawn</li>
-    <li>Chatuchak Weekend Market</li>
-    <li>Chao Phraya River Cruise</li>
-    <li>Khao San Road</li>
-  </ul>
-
-  <h3>Food You Absolutely Should Try:</h3>
-  <ul>
-    <li>Pad Thai</li>
-    <li>Mango Sticky Rice</li>
-    <li>Tom Yum Soup</li>
-    <li>Thai Iced Tea</li>
-  </ul>
-
-  <p>Bangkok is a perfect blend of culture, modernity, and adventure. Whether you're a foodie, a photographer, or someone who loves exploring cities, Bangkok will surely leave you amazed.</p>
-
-  <a href="index.html">⬅ Back to Home</a>
-</div>
-
-<footer>
-  © 2025 Travel with Darpan – All Rights Reserved
-</footer>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Travel With Darpan - Bangkok</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Street Food Tour in Bangkok | Travel with Darpan</title>
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-31H0M6PMT1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-31H0M6PMT1');
   </script>
 
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', sans-serif; background: #0d0d0d; color: #fff; line-height: 1.7; }
-    a { text-decoration: none; color: inherit; }
-
-    header {
-      position: fixed;
-      width: 100%;
-      top: 0;
-      left: 0;
-      background: rgba(0,0,0,0.85);
-      padding: 15px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 10;
-    }
-    .logo { font-size: 1.5rem; font-weight: bold; color: #00aaff; }
-    nav a { margin: 0 15px; font-weight: 500; transition: 0.3s; }
-    nav a:hover, nav a.active { color: #00ffff; }
-
-    .hero {
-      height: 60vh;
-      background: url('https://images.unsplash.com/photo-1505761671935-60b3a7427bad') center/cover no-repeat;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      position: relative;
-    }
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.5);
-    }
-    .hero-content { position: relative; z-index: 1; }
-    .hero h1 { font-size: 3rem; margin-bottom: 15px; }
-    .hero p { font-size: 1.2rem; }
-
-    section { padding: 100px 20px 50px; max-width: 1000px; margin: auto; }
-    h2 { font-size: 2rem; color: #00aaff; margin-bottom: 20px; text-align: center; }
-    p { margin-bottom: 15px; color: #ddd; }
-
-    .blog-img {
-      width: 100%;
-      border-radius: 12px;
-      margin: 20px 0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #000;
-      margin-top: 50px;
-      color: #777;
-      border-top: 1px solid #222;
-    }
-
-    #backToTop {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background: #00aaff;
-      padding: 12px 18px;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      font-weight: bold;
-      color: #000;
-    }
-    #backToTop:hover { background: #00ffff; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; }
+    header { background: #ff9800; color: white; padding: 20px; text-align: center; }
+    .container { max-width: 900px; margin: 40px auto; background: white; padding: 20px; border-radius: 10px; }
+    h1 { margin-top: 0; }
+    img { width: 100%; border-radius: 10px; margin: 20px 0; }
+    p { line-height: 1.7; font-size: 1.05rem; color: #444; }
+    a.back { display: inline-block; margin-top: 20px; padding: 10px 15px; background: #ff9800; color: white; text-decoration: none; border-radius: 6px; }
+    a.back:hover { background: #e68900; }
   </style>
 </head>
+
 <body>
 
 <header>
-  <div class="logo">🌍 Travel With Darpan</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="blogs.html" class="active">Blogs</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <h1>Street Food Tour in Bangkok</h1>
+  <p>A flavour-packed journey through the city's vibrant food streets</p>
 </header>
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>Bangkok – The City of Life</h1>
-    <p>A blend of culture, food, nightlife, and modern city vibes</p>
-  </div>
-</section>
+<div class="container">
 
-<section>
-  <h2>Introduction</h2>
-  <p>Bangkok is a vibrant city full of energy, flavours, and cultural charm. From its glittering temples to lively street markets, this destination offers something unforgettable at every turn.</p>
+  <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1200&q=80" alt="Bangkok Street Food">
 
-  <h2>Must Visit Places</h2>
-  <p>Key attractions include The Grand Palace, Wat Pho, floating markets, and the bustling streets of Sukhumvit and Chinatown. Whether you're a foodie or a culture lover, Bangkok offers endless experiences.</p>
+  <p>
+    Bangkok is a paradise for food lovers. From spicy noodles to crispy pork and mouth-watering desserts, the streets are full of flavours that you simply can’t resist. Every corner you turn has a food cart serving something unique, fresh, and absolutely delicious.
+  </p>
 
-  <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98" alt="Bangkok City" class="blog-img">
+  <p>
+    One of the most iconic places to explore is Chinatown (Yaowarat Road), where the streets come alive with sizzling woks, bright neon lights, and long queues of both locals and tourists waiting for their favourite dishes. Pad Thai, mango sticky rice, spicy papaya salad — everything tastes better when it's eaten right there on the street.
+  </p>
 
-  <h2>Food & Nightlife</h2>
-  <p>Bangkok's street food scene is world-famous — Pad Thai, Mango Sticky Rice, Thai curries, and more. The city's nightlife includes rooftop bars, night markets, live music, and river cruises.</p>
+  <p>
+    A must-try experience is the famous Boat Noodles at Victory Monument. The bowls may be small, but the flavours are powerful — rich broth, tender meat, and the right balance of spices.
+  </p>
 
-  <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800" alt="Bangkok Food Market" class="blog-img">
-</section>
+  <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=1200&q=80" alt="Bangkok Food Market">
 
-<footer>
-  <p>Contact us at: wanderworld@example.com</p>
-  <p>© 2025 Travel With Darpan</p>
-</footer>
+  <p>
+    If you love desserts, Bangkok will not disappoint. Coconut ice cream, roti with condensed milk, fresh fruit smoothies — there's something sweet for everyone.
+  </p>
 
-<button id="backToTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+  <p>
+    A street food tour in Bangkok is more than just eating — it's an experience full of culture, energy, and unforgettable tastes. It's truly a must-visit for every traveller.
+  </p>
 
-<script>
-  const btn = document.getElementById('backToTop');
-  window.onscroll = function () {
-    btn.style.display = (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) ? 'block' : 'none';
-  };
-</script>
+  <a class="back" href="blogs.html">← Back to Blogs</a>
+
+</div>
 
 </body>
 </html>
