@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Travel with Darpan | Explore Destinations & Stories</title>
-  <meta name="description" content="Travel with Darpan – Explore travel blogs, scenic destinations, galleries and stories from Himachal, Andaman & Bangkok." />
-
-  <!-- Preload Hero Image -->
-  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=70" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel With Darpan</title>
+  <meta name="description" content="Travel With Darpan - Explore destinations, stories & unforgettable journeys.">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-31H0M6PMT1"></script>
@@ -18,47 +15,14 @@
     gtag('config', 'G-31H0M6PMT1');
   </script>
 
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box;}
-    body{font-family:'Segoe UI',sans-serif;background:#0d0d0d;color:#fff;line-height:1.6;}
-    a{text-decoration:none;color:inherit;}
-
-    header{position:fixed;width:100%;top:0;left:0;background:rgba(0,0,0,0.8);padding:15px 40px;display:flex;justify-content:space-between;align-items:center;z-index:10;}
-    .logo{font-size:1.5rem;font-weight:bold;color:#00aaff;}
-    nav a{margin:0 15px;font-weight:500;transition:0.3s;}
-    nav a:hover{color:#00ffff;}
-
-    .hero{height:90vh;background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=70') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;}
-    .hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);}    
-    .hero-content{position:relative;z-index:1;max-width:800px;padding:20px;}
-    .hero h1{font-size:3rem;margin-bottom:20px;}
-    .hero p{font-size:1.2rem;color:#ddd;}
-
-    section{padding:80px 20px;max-width:1100px;margin:auto;}
-    h2{text-align:center;font-size:2.2rem;margin-bottom:40px;color:#00aaff;}
-
-    .blogs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;}
-    .card{background:#111;border-radius:14px;overflow:hidden;transition:0.3s;}
-    .card:hover{transform:translateY(-6px);}
-    .card img{width:100%;height:200px;object-fit:cover;}
-    .card-content{padding:20px;}
-    .card h3{margin-bottom:10px;color:#00ffff;}
-    .card p{color:#bbb;font-size:0.95rem;}
-
-    footer{text-align:center;padding:30px;background:#000;color:#777;border-top:1px solid #222;}
-
-    @media(max-width:768px){
-      .hero h1{font-size:2.2rem;}
-      header{padding:12px 20px;}
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-  <div class="logo">🌍 Travel with Darpan</div>
+  <div class="logo">🌍 Travel With Darpan</div>
   <nav>
-    <a href="index.html">Home</a>
+    <a href="index.html" class="active">Home</a>
     <a href="blogs.html">Blogs</a>
     <a href="gallery.html">Gallery</a>
     <a href="contact.html">Contact</a>
@@ -67,45 +31,69 @@
 
 <section class="hero">
   <div class="hero-content">
-    <h1>Discover the World with Me</h1>
-    <p>Real travel stories, scenic destinations & unforgettable journeys</p>
+    <h1>Explore the World With Us</h1>
+    <p>Discover destinations, stories & unforgettable journeys</p>
+    <a href="blogs.html">Read Our Blogs</a>
   </div>
 </section>
 
-<section>
-  <h2>Featured Travel Blogs</h2>
-  <div class="blogs">
-
-    <a href="blog1.html" class="card">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=65" alt="Himachal Mountains">
-      <div class="card-content">
-        <h3>Himachal – Mountains & Memories</h3>
-        <p>Explore winding roads, snow peaks and peaceful valleys.</p>
+<section id="blogs">
+  <h2>Latest Travel Blogs</h2>
+  <div class="blogs-grid">
+    <div class="blog-card" onclick="location.href='blog1.html'">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Himachal Mountains">
+      <div class="content">
+        <h3>Himachal – Mountains & Magic</h3>
+        <p>A peaceful escape into the Himalayas with breathtaking views.</p>
+        <a href="blog1.html">Read More →</a>
       </div>
-    </a>
+    </div>
 
-    <a href="blog2.html" class="card">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=65" alt="Andaman Beaches">
-      <div class="card-content">
+    <div class="blog-card" onclick="location.href='blog2.html'">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Andaman">
+      <div class="content">
         <h3>Andaman – Turquoise Paradise</h3>
-        <p>Crystal waters, white sands and tropical bliss.</p>
+        <p>Crystal clear waters, beaches, and unforgettable sunsets.</p>
+        <a href="blog2.html">Read More →</a>
       </div>
-    </a>
+    </div>
 
-    <a href="blog3.html" class="card">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=65" alt="Bangkok Street Food">
-      <div class="card-content">
-        <h3>Bangkok – Street Food Tour</h3>
-        <p>Flavours, culture and vibrant night markets.</p>
+    <div class="blog-card" onclick="location.href='blog3.html'">
+      <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" alt="Bangkok">
+      <div class="content">
+        <h3>Bangkok – Street Food & Culture</h3>
+        <p>Vibrant streets, food, and night markets to explore.</p>
+        <a href="blog3.html">Read More →</a>
       </div>
-    </a>
+    </div>
+  </div>
+</section>
 
+<section id="gallery">
+  <h2>Photo Gallery</h2>
+  <div class="gallery-grid">
+    <img src="https://images.unsplash.com/photo-1494475673543-6a6a27143b22" alt="Mountain view">
+    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800" alt="Beach view">
+    <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429" alt="City view">
   </div>
 </section>
 
 <footer>
-  <p>© 2025 Travel with Darpan</p>
+  <p>Contact us at: wanderworld@example.com</p>
+  <p>© 2025 Travel With Darpan</p>
 </footer>
+
+<button id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'});">↑</button>
+
+<script>
+  // Back to top button
+  const btn = document.getElementById('backToTop');
+  window.onscroll = function() {
+    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+      btn.style.display = 'block';
+    } else {btn.style.display = 'none';}
+  };
+</script>
 
 </body>
 </html>
