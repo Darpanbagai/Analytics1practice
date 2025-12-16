@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel With Darpan - Andaman</title>
-  <meta name="description" content="Travel With Darpan - Andaman travel blog. Explore beaches, islands, and turquoise waters.">
+  <title>Travel With Darpan – Himachal</title>
+  <meta name="description" content="Travel With Darpan Himachal travel blog. Explore peaceful valleys, snow-capped peaks, local culture, and mountain adventures.">
 
-  <!-- Google Analytics -->
+  <!-- Google Analytics (GA4) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-31H0M6PMT1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -15,8 +15,10 @@
     gtag('config', 'G-31H0M6PMT1');
   </script>
 
+  <!-- Main Styles -->
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header>
@@ -29,41 +31,60 @@
   </nav>
 </header>
 
+<!-- Hero Section -->
 <section class="hero">
   <div class="hero-content">
-    <h1>Andaman – Turquoise Paradise</h1>
-    <p>Beaches, islands, and unforgettable sunsets</p>
+    <h1>Himachal – Mountains & Magic</h1>
+    <p>Peaceful valleys, snow-capped peaks, and unforgettable journeys</p>
   </div>
 </section>
 
-<section>
+<!-- Blog Content -->
+<section class="blog-content">
   <h2>Introduction</h2>
-  <p>The Andaman Islands are a tropical paradise with crystal-clear waters, pristine beaches, and a peaceful atmosphere perfect for relaxation and adventure.</p>
+  <p>
+    Himachal Pradesh is a dream destination for mountain lovers. With its
+    serene landscapes, pine forests, winding roads, and snow-covered peaks,
+    the state offers a perfect escape from busy city life.
+  </p>
 
-  <h2>Top Destinations</h2>
-  <p>Radhanagar Beach, Havelock Island, Neil Island, and Cellular Jail are must-visit locations offering beautiful landscapes and cultural experiences.</p>
+  <h2>Must-Visit Places</h2>
+  <p>
+    Shimla, Manali, Spiti Valley, and Dharamshala are among the most popular
+    destinations. Each location offers unique experiences — from adventure
+    sports and trekking to peaceful monasteries and scenic viewpoints.
+  </p>
 
-  <h2>Activities & Experiences</h2>
-  <p>Snorkeling, scuba diving, island hopping, and exploring coral reefs make Andaman a dream destination for travelers seeking both adventure and serenity.</p>
+  <h2>Local Culture & Cuisine</h2>
+  <p>
+    Himachali culture is deeply rooted in traditions and festivals. Local
+    dishes like Siddu, Chha Gosht, and Babru give travelers a taste of authentic
+    mountain flavors.
+  </p>
 
-  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Andaman Beach Sunset" class="blog-img">
-  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Andaman Scenic Beach" class="blog-img">
+  <img 
+    src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1000&q=60"
+    alt="Scenic mountain landscape in Himachal Pradesh"
+    class="blog-img"
+    loading="lazy"
+    decoding="async">
 </section>
 
+<!-- Footer -->
 <footer>
   <p>Contact us at: wanderworld@example.com</p>
   <p>© 2025 Travel With Darpan</p>
 </footer>
 
-<button id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'});">↑</button>
+<!-- Back to Top -->
+<button id="backToTop" aria-label="Back to top"
+  onclick="window.scrollTo({top:0, behavior:'smooth'});">↑</button>
 
 <script>
   const btn = document.getElementById('backToTop');
-  window.onscroll = function() {
-    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
-      btn.style.display = 'block';
-    } else { btn.style.display = 'none'; }
-  };
+  window.addEventListener('scroll', () => {
+    btn.style.display = window.scrollY > 200 ? 'block' : 'none';
+  });
 </script>
 
 </body>
