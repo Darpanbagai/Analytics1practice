@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel With Darpan - Bangkok Street Food</title>
-  <meta name="description" content="Travel With Darpan - Bangkok Street Food Tour. Experience flavours, culture, and night market vibes.">
+  <title>Travel With Darpan – Bangkok</title>
+  <meta name="description" content="Travel With Darpan Bangkok travel blog. Discover vibrant street life, temples, night markets, and unforgettable food experiences.">
 
-  <!-- Google Analytics -->
+  <!-- Google Analytics (GA4) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-31H0M6PMT1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -15,8 +15,10 @@
     gtag('config', 'G-31H0M6PMT1');
   </script>
 
+  <!-- Main Styles -->
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header>
@@ -29,53 +31,60 @@
   </nav>
 </header>
 
+<!-- Hero Section -->
 <section class="hero">
   <div class="hero-content">
-    <h1>Bangkok Street Food Tour</h1>
-    <p>Flavours, culture & vibrant night markets</p>
+    <h1>Bangkok – City of Life & Flavors</h1>
+    <p>Street food, temples, night markets, and vibrant culture</p>
   </div>
 </section>
 
-<section>
+<!-- Blog Content -->
+<section class="blog-content">
   <h2>Introduction</h2>
-  <p>Bangkok is a paradise for food lovers. Its street food culture is famous across the world, offering spicy, sweet, smoky, and savoury dishes that burst with flavour. From sizzling noodles to juicy grilled meats and iconic desserts, Bangkok’s streets never fail to impress.</p>
+  <p>
+    Bangkok is a city that never sleeps. From its buzzing streets and colorful
+    markets to peaceful temples hidden between skyscrapers, the city offers
+    a perfect blend of tradition and modern life.
+  </p>
 
-  <h2>Must-Visit Places</h2>
-  <p><strong>Yaowarat (Chinatown)</strong> is the heart of street food, glowing with neon lights and bustling with food stalls. Whether it’s dim sum, seafood, or mango sticky rice — it's a must-visit.</p>
-  <p><strong>Victory Monument</strong> is famous for its boat noodles — small bowls packed with rich broth, tender meat, and bold spices.</p>
+  <h2>Places to Visit</h2>
+  <p>
+    The Grand Palace, Wat Arun, Wat Pho, and Chatuchak Market are must-visit
+    attractions. Each place reflects Bangkok’s rich culture, history, and
+    vibrant energy.
+  </p>
 
-  <h2>Popular Thai Street Foods</h2>
-  <p>✔️ Pad Thai – Bangkok’s iconic stir-fried noodles<br>
-     ✔️ Som Tam – Spicy raw papaya salad<br>
-     ✔️ Mango Sticky Rice – Sweet, fruity & refreshing<br>
-     ✔️ Moo Ping – Grilled pork skewers</p>
+  <h2>Food & Nightlife</h2>
+  <p>
+    Bangkok is a paradise for food lovers. From street-side Pad Thai and
+    mango sticky rice to rooftop bars and night markets, the city offers
+    unforgettable culinary experiences.
+  </p>
 
-  <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713" alt="Bangkok Street Food Market" class="blog-img">
-
-  <p>Bangkok’s desserts are equally irresistible — coconut ice cream, roti with condensed milk, and fresh tropical fruit smoothies add the perfect sweet touch to your food adventure.</p>
-
-  <img src="https://images.unsplash.com/photo-1519985176271-adb1088fa94c" alt="Bangkok Food Night Market" class="blog-img">
-
-  <p>Exploring Bangkok’s street food scene is not just about eating — it's an experience full of energy, culture, and unforgettable tastes.</p>
-
+  <img 
+    src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1000&q=60"
+    alt="Bangkok city street life and temples"
+    class="blog-img"
+    loading="lazy"
+    decoding="async">
 </section>
 
+<!-- Footer -->
 <footer>
   <p>Contact us at: wanderworld@example.com</p>
   <p>© 2025 Travel With Darpan</p>
 </footer>
 
-<button id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'});">↑</button>
+<!-- Back to Top -->
+<button id="backToTop" aria-label="Back to top"
+  onclick="window.scrollTo({top:0, behavior:'smooth'});">↑</button>
 
 <script>
   const btn = document.getElementById('backToTop');
-  window.onscroll = function() {
-    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
-      btn.style.display = 'block';
-    } else {
-      btn.style.display = 'none';
-    }
-  };
+  window.addEventListener('scroll', () => {
+    btn.style.display = window.scrollY > 200 ? 'block' : 'none';
+  });
 </script>
 
 </body>
